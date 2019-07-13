@@ -1,3 +1,6 @@
+;; Basic config
+
+(show-paren-mode 1)
 
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
@@ -12,7 +15,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (magit ## dracula-theme ensime helm-ag))))
+ '(package-selected-packages (quote (
+				     magit ##
+				     dracula-theme
+				     ensime
+				     helm-ag))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -23,5 +30,7 @@
 
 
 ;; load magit
-(load "./magit.el")
+(load "~/.emacs.d/magit.el")
 
+;; load find config
+(load "~/.emacs.d/find.el")
