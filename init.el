@@ -21,7 +21,7 @@
  '(helm-ag-base-command "rg --no-heading")
  '(package-selected-packages
    (quote
-    (helm flycheck-haskell magit ## dracula-theme ensime helm-ag))))
+    (helm-rg helm flycheck-haskell magit ## dracula-theme ensime helm-ag))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
