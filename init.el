@@ -1,4 +1,9 @@
 ;; Basic config
+
+;; Start Emacs in Full screen
+(custom-set-variables
+ '(initial-frame-alist (quote ((fullscreen . maximized)))))
+
 ;; tabs
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
