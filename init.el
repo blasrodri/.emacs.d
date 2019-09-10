@@ -17,6 +17,8 @@
 (setq-default tab-width 4)
 ;; parens
 (show-paren-mode 1)
+;; text
+(set-face-attribute 'default nil :height 120)
 
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
