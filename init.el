@@ -12,6 +12,8 @@
    (quote
     (helm-rg helm flycheck-haskell magit ## dracula-theme ensime helm-ag))))
 
+;; linum
+(global-linum-mode 1)
 ;; tabs
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
