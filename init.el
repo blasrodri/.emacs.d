@@ -10,7 +10,7 @@
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(package-selected-packages
    (quote
-    (helm-rg helm flycheck-haskell magit ## dracula-theme ensime helm-ag))))
+    (flycheck-yamllint helm-rg helm flycheck-haskell magit ## dracula-theme ensime helm-ag))))
 
 ;; linum
 (global-linum-mode 1)
@@ -45,3 +45,6 @@
 
 ;; load find config
 (load "~/.emacs.d/find.el")
+
+;; extra keybindings
+(load "~/.emacs.d/shutdown.el")
