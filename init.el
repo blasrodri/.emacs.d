@@ -10,7 +10,7 @@
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(package-selected-packages
    (quote
-    (flycheck-yamllint helm-rg helm flycheck-haskell magit ## dracula-theme ensime helm-ag))))
+    (elpy flyspell-correct-helm yaml-mode flycheck-yamllint helm-rg helm flycheck-haskell magit ## dracula-theme ensime helm-ag))))
 
 ;; linum
 (global-linum-mode 1)
@@ -48,3 +48,18 @@
 
 ;; extra keybindings
 (load "~/.emacs.d/shutdown.el")
+
+;; spell check
+(require 'flyspell-correct-helm)
+(define-key flyspell-mode-map (kbd "C-;") 'flyspell-correct-wrapper)
+
+;; buffer management
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+;; Ensure ibuffer opens with point at the current buffer's entry.
+(defadvice ibuffer
+  (around ibuffer-point-to-most-recent) ()
+  "Open ibuffer with cursor pointed to most recent buffer name."
+  (let ((recent-buffer-name (buffer-name)))
+    ad-do-it
+    (ibuffer-jump-to-buffer recent-buffer-name)))
+(ad-activate 'ibuffer)
