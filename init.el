@@ -1,5 +1,5 @@
 ; list the packages you want
-(setq package-list '(ace-window auto-complete dumb-jump elpy evil gruvbox-theme helm-rg magit neotree rust-mode))
+(setq package-list '(ace-window auto-complete cargo dumb-jump elpy evil gruvbox-theme helm-rg magit neotree python-mode rust-mode))
 
 ; list the repositories containing them
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
@@ -38,10 +38,17 @@
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 
+;; Ace Window
 (global-set-key (kbd "M-C-o") 'ace-window)
-(auto-complete-mode 1)
+
+;; Helm mode
+(helm-mode 1)
 
 ;; Autocomplete
+(auto-complete-mode 1)
+
+;; Hooks
+(load "~/.emacs.d/hooks.el")
 
 ;; Misc
 ;; Move the cursor to new newly created window
@@ -58,3 +65,17 @@
   (balance-windows)
   (other-window 1))
 (global-set-key (kbd "C-x 3") 'split-and-follow-vertically)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (cargo cargo-minor-mode python-mode rust-mode neotree magit helm-rg gruvbox-theme evil elpy dumb-jump auto-complete ace-window))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
