@@ -1,5 +1,5 @@
 ; list the packages you want
-(setq package-list '(ace-window auto-complete dumb-jump evil gruvbox-theme helm-rg magit neotree rust-mode))
+(setq package-list '(ace-window auto-complete dumb-jump elpy evil gruvbox-theme helm-rg magit neotree rust-mode))
 
 ; list the repositories containing them
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
