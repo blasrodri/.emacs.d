@@ -1,5 +1,5 @@
 ; list the packages you want
-(setq package-list '(ace-window dumb-jump xevil gruvbox-theme helm-rg magit neotree rust-mode))
+(setq package-list '(ace-window auto-complete dumb-jump evil gruvbox-theme helm-rg magit neotree rust-mode))
 
 ; list the repositories containing them
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
@@ -39,6 +39,9 @@
 (global-set-key [f8] 'neotree-toggle)
 
 (global-set-key (kbd "M-C-o") 'ace-window)
+(auto-complete-mode 1)
+
+;; Autocomplete
 
 ;; Misc
 ;; Move the cursor to new newly created window
