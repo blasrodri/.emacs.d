@@ -1,5 +1,5 @@
 ; list the packages you want
-(setq package-list '(evil gruvbox-theme helm-rg magit rust-mode))
+(setq package-list '(ace-window evil gruvbox-theme helm-find-files helm-rg magit neotree rust-mode))
 
 ; list the repositories containing them
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
@@ -33,3 +33,9 @@
 
 ;; Magit
 (global-set-key (kbd "C-x g") 'magit-status)
+
+;; Neotree
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+
+(global-set-key (kbd "M-C-o") 'ace-window)
