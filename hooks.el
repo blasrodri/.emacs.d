@@ -4,6 +4,7 @@
 (add-hook 'python-mode-hook
 	  (lambda ()
 	    (elpy-mode)
+	    (dumb-jump-mode)
 	    ))
 
 
@@ -14,4 +15,5 @@
 (add-hook 'rust-mode-hook
 	  (lambda ()
 	    (cargo-minor-mode)
+	    (dumb-jump-mode)
 	    ))

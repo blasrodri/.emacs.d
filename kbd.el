@@ -11,6 +11,7 @@
 
 ;; Buffer list
 (global-set-key (kbd "C-x C-a b")   'helm-buffers-list)
+
 (require 'evil)
 (evil-define-key 'normal neotree-mode-map (kbd "TAB") 'neotree-enter)
 (evil-define-key 'normal neotree-mode-map (kbd "SPC") 'neotree-quick-look)
