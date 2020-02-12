@@ -1,5 +1,5 @@
 ; list the packages you want
-(setq package-list '(ace-window evil gruvbox-theme helm-find-files helm-rg magit neotree rust-mode))
+(setq package-list '(ace-window evil gruvbox-theme helm-rg magit neotree rust-mode))
 
 ; list the repositories containing them
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
@@ -39,3 +39,19 @@
 (global-set-key [f8] 'neotree-toggle)
 
 (global-set-key (kbd "M-C-o") 'ace-window)
+
+;; Misc
+;; Move the cursor to new newly created window
+(defun split-and-follow-horizontally ()
+  (interactive)
+  (split-window-below)
+  (balance-windows)
+  (other-window 1))
+(global-set-key (kbd "C-x 2") 'split-and-follow-horizontally)
+
+(defun split-and-follow-vertically ()
+  (interactive)
+  (split-window-right)
+  (balance-windows)
+  (other-window 1))
+(global-set-key (kbd "C-x 3") 'split-and-follow-vertically)
