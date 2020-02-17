@@ -45,7 +45,7 @@
 (helm-mode 1)
 
 ;; Autocomplete
-(auto-complete-mode 1)
+(global-auto-complete-mode t)
 
 ;; Hooks
 (load "~/.emacs.d/hooks.el")
@@ -72,7 +72,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (auctex cargo cargo-minor-mode python-mode rust-mode neotree magit helm-rg gruvbox-theme evil elpy dumb-jump auto-complete ace-window))))
+    (python-mode go-autocomplete go-mode cargo auctex rust-mode neotree magit helm-rg gruvbox-theme flyspell-correct-helm evil elpy dumb-jump auto-complete ace-window))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
