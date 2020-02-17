@@ -20,6 +20,9 @@
 ;; Theme
 (load-theme 'gruvbox t)
 
+;; Buffers
+(ido-mode 1)
+
 ;; Evil mode
 (require 'evil)
 (evil-mode 1)
