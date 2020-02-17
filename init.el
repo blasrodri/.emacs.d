@@ -50,6 +50,10 @@
 ;; Hooks
 (load "~/.emacs.d/hooks.el")
 
+;; TestClient
+(add-to-list 'load-path "~/.emacs.d/elpa/restclient")
+(load "restclient")
+
 ;; Misc
 ;; Move the cursor to new newly created window
 (defun split-and-follow-horizontally ()
@@ -72,7 +76,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (python-mode go-autocomplete go-mode cargo auctex rust-mode neotree magit helm-rg gruvbox-theme flyspell-correct-helm evil elpy dumb-jump auto-complete ace-window))))
+    (restclient-test python-mode go-autocomplete go-mode cargo auctex rust-mode neotree magit helm-rg gruvbox-theme flyspell-correct-helm evil elpy dumb-jump auto-complete ace-window))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

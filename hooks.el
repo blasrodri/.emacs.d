@@ -17,3 +17,11 @@
 	    (cargo-minor-mode)
 	    (dumb-jump-mode)
 	    ))
+
+(require 'go-mode)
+(add-to-list 'auto-mode-alist '("\\.go\\'" . go-mode))
+
+(add-hook 'go-mode-hook
+	  (lambda ()
+	    (dumb-jump-mode)
+	    ))
