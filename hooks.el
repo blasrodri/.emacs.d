@@ -16,6 +16,7 @@
 	  (lambda ()
 	    (cargo-minor-mode)
 	    (dumb-jump-mode)
+	    (auto-complete-mode)
 	    ))
 
 (require 'go-mode)
