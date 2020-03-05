@@ -44,9 +44,6 @@
 ;; Ace Window
 (global-set-key (kbd "M-C-o") 'ace-window)
 
-;; Helm mode
-(helm-mode 1)
-
 ;; Autocomplete
 (global-auto-complete-mode t)
 
@@ -79,7 +76,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (restclient-test python-mode go-autocomplete go-mode cargo auctex rust-mode neotree magit helm-rg gruvbox-theme flyspell-correct-helm evil elpy dumb-jump auto-complete ace-window))))
+    (projectile restclient-test python-mode go-autocomplete go-mode cargo auctex rust-mode neotree magit helm-rg gruvbox-theme flyspell-correct-helm evil elpy dumb-jump auto-complete ace-window))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

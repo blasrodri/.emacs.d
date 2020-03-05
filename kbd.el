@@ -1,9 +1,6 @@
 ;; BUddger
 (global-set-key (kbd "C-x C-b") #'ibuffer)
 ;; Helm
-(global-set-key (kbd "M-x") #'helm-M-x)
-(global-set-key (kbd "C-x r b") #'helm-filtered-bookmarks)
-(global-set-key (kbd "C-x C-f") #'helm-find-files)
 
 ;; Helm find
 (global-set-key (kbd "C-x C-a f")   'helm-find)
@@ -11,8 +8,11 @@
 ;; Helm rg
 (global-set-key (kbd "C-x C-a g")   'helm-rg)
 
+;; Projectile
+(global-set-key (kbd "C-x C-a p")   'projectile-find-file)
+
 ;; Buffer list
-(global-set-key (kbd "C-x C-a b")   'helm-buffers-list)
+;; (global-set-key (kbd "C-x C-a b")   'helm-buffers-list)
 
 (require 'evil)
 (evil-define-key 'normal neotree-mode-map (kbd "TAB") 'neotree-enter)
