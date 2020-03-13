@@ -1,5 +1,10 @@
 ; list the packages you want
-(setq package-list '(ace-window auctex auto-complete cargo dumb-jump elpy evil go-mode go-autocomplete gruvbox-theme helm-rg magit neotree projectile python-mode rust-mode))
+(setq package-list '(
+			ace-window auctex auto-complete cargo dumb-jump elpy evil
+			go-mode go-autocomplete gruvbox-theme haskell-mode helm-rg
+			magit neotree projectile python-mode rust-mode
+		    )
+)
 
 ; list the repositories containing them
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
@@ -76,7 +81,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (projectile restclient-test python-mode go-autocomplete go-mode cargo auctex rust-mode neotree magit helm-rg gruvbox-theme flyspell-correct-helm evil elpy dumb-jump auto-complete ace-window))))
+    (haskell-mode projectile restclient-test python-mode go-autocomplete go-mode cargo auctex rust-mode neotree magit helm-rg gruvbox-theme flyspell-correct-helm evil elpy dumb-jump auto-complete ace-window))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

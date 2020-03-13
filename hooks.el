@@ -26,3 +26,10 @@
 	  (lambda ()
 	    (dumb-jump-mode)
 	    ))
+
+(require 'haskell-mode)
+(add-to-list 'auto-mode-alist '("\\.hs\\'" . haskell-mode))
+(add-hook 'go-mode-hook
+	  (lambda ()
+	    (dumb-jump-mode)
+	    ))
